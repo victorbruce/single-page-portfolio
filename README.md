@@ -2,7 +2,7 @@
 
 Translating a Single-Page Desgin Portfolio UI in figma into code.
 
-Live Link: N/A
+Live Link: [vb-singlepageportfolio.netlify.app](https://vb-singlepageportfolio.netlify.app/)
 
 ## 📌 Table of Contents
 
@@ -59,12 +59,3 @@ Netlify
 ## 👤 Author
 
 Victor Bruce
-
-
-- proper git meessages including branching and commits
-
-- match ui provided
-
-- write semantic html and style pages with grid and flex boxes
-
-- mobile friendly layout
