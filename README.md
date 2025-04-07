@@ -45,8 +45,8 @@ Double click the `index.html` file to open the code in the browser of your choic
 
 ## 📋 Approach
 
-- Structured my project folder and connected stylesheets to HTML.
-- 
+- Structured my project folder and connect stylesheets to HTML.
+- Reset global styles and define base styles for fonts and colors
 
 
 ## 📸 Screenshots

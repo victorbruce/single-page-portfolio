@@ -1,4 +1,90 @@
-/* colors and fonts */
+/* Global Reset styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Variables: Colors */
+:root {
+  --color-light-cream: #fff7f0;
+  --color-black: #030303;
+  --color-galatic-blue: #755cde;
+  --color-summer-yellow: #f6a560;
+  --color-pink: #f39e9e;
+  --color-light-red: #eb7565;
+  --color-cyan: #61c4b7;
+  --color-dark-purple: #552049;
+  --color-medium-brown: #7a746e;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-black);
+}
+
+p {
+  color: var(--color-medium-brown);
+}
+
+/* Font Sizes: Large Headings */
+h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Font Sizes: Medium Headings */
+h2 {
+  font-size: 1.625rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Font Sizes: Small Headings */
+h3 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+	h3 {
+		font-size: 2rem;
+	}
+}
+
+p {
+	font-size: 1rem;
+}
+
+
 body {
-	background-color: beige;
+  background-color: var(--color-light-cream);
 }
