@@ -47,6 +47,8 @@ Double click the `index.html` file to open the code in the browser of your choic
 
 - Structured my project folder and connect stylesheets to HTML.
 - Reset global styles and define base styles for fonts and colors
+- Next, I worked on the navigation components(main and footer navigations) and enusred they are responsive and accessible across all major devices
+
 
 
 ## 📸 Screenshots
