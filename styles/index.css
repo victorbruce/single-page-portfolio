@@ -20,6 +20,12 @@
   --color-cyan: #61c4b7;
   --color-dark-purple: #552049;
   --color-medium-brown: #7a746e;
+
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+
+  --container-size: 1111px;
 }
 
 html {
@@ -35,6 +41,10 @@ h3 {
 
 p {
   color: var(--color-medium-brown);
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Font Sizes: Large Headings */
@@ -91,4 +101,73 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Wrapper */
+.container {
+  padding: var(--spacing-sm);
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 34px var(--spacing-sm);
+  }
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-size);
+  margin: auto;
+}
+
+.nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav__link img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .nav__link img {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.nav__btn {
+  color: var(--color-light-cream);
+  background-color: var(--color-black);
+  font-size: 0.875rem;
+  padding: 0.5rem 1.75rem;
+  border-radius: 28px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+
+  transition: all 0.3s ease-out;
+}
+
+.nav__btn:hover {
+  background-color: var(--color-galatic-blue);
+  color: var(--color-light-cream);
+}
+
+@media (min-width: 768px) {
+  .nav__btn {
+    height: 56px;
+  }
 }
