@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="./styles/index.css" />
-  
-  <title>Frontend Mentor | Single-page design portfolio</title>
-</head>
-<body>
-  <main class="container">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <title>Frontend Mentor | Single-page design portfolio</title>
+  </head>
+  <body>
     <!-- Header -->
-     <header>
-      <nav class="nav" aria-label="Main Navigation">
+    <header class="container">
+      <nav class="nav" aria-label="Main Site Navigation">
         <a href="/" class="nav__link">
           <img src="./assets/logo.svg" alt="portfolio logo" />
         </a>
         <a href="#" class="nav__btn">Free Consultation</a>
       </nav>
-     </header>
 
-     <!-- Footer -->
-    <footer aria-label="Footer Navigation">
-      <header>
-        <nav class="nav" aria-label="Main Navigation">
-          <a href="/" class="nav__link">
-            <img src="./assets/logo.svg" alt="portfolio logo" />
-          </a>
-          <a href="#" class="nav__btn">Free Consultation</a>
-        </nav>
-       </header>
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-section">
+        <div class="hero__container">
+          <h1 id="hero-section">Design solutions made easy</h1>
+          <p>
+            With over ten years of experience in various design disciplines,
+            I&apos;m your one-stop shop for your design needs.
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <!-- main -->
+    <main class="container">
+      <!-- other sections-->
+    </main>
+
+    <!-- Footer -->
+    <footer class="container">
+      <nav class="nav" aria-label="Footer Navigation">
+        <a href="/" class="nav__link">
+          <img src="./assets/logo.svg" alt="portfolio logo" />
+        </a>
+        <a href="#" class="nav__btn">Free Consultation</a>
+      </nav>
     </footer>
-  </main>
-</body>
+  </body>
 </html>
