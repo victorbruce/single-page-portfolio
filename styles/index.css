@@ -22,13 +22,14 @@
   --color-medium-brown: #7a746e;
   --color-dark-brown: #69645f;
 
-
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
 
   --font-body: 1rem;
   --font-body-md: 1.125rem;
+
+  --corner-radius: 8px;
 
   --container-size: 1111px;
 }
@@ -109,6 +110,18 @@ body {
   font-weight: 400;
   font-size: var(--font-body);
   line-height: 1.5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Wrapper */
@@ -215,4 +228,77 @@ body {
   .hero__container p {
     max-width: 720px;
   }
+}
+
+/* Services */
+.services {
+  max-width: var(--container-size);
+  margin: auto;
+}
+
+.services__card {
+  border-radius: var(--corner-radius);
+  padding: var(--spacing-md);
+}
+
+.services__card h3 {
+  color: white;
+}
+
+.services__cards {
+  display: grid;
+  gap: var(--spacing-md);
+  grid-template-areas:
+    "graphic graphic"
+    "ui apps"
+    "illustrations illustrations"
+    "photography photography"
+    "motion motion";
+}
+
+@media (min-width: 768px) {
+  .services__cards {
+    grid-template-areas: 
+    "graphic graphic ui apps"
+    "graphic graphic illustrations illustrations"
+    "photography photography motion motion";
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__cards {
+    grid-template-areas: 
+    "graphic ui apps photography"
+    "graphic illustrations illustrations motion";
+  }
+}
+
+.services__card--graphic {
+  grid-area: graphic;
+  background-color: var(--color-galatic-blue);
+}
+
+.services__card--ui {
+  grid-area: ui;
+  background-color: var(--color-summer-yellow);
+}
+
+.services__card--apps {
+  grid-area: apps;
+  background-color: var(--color-pink);
+}
+
+.services__card--illustrations {
+  grid-area: illustrations;
+  background-color: var(--color-light-red);
+}
+
+.services__card--photography {
+  grid-area: photography;
+  background-color: var(--color-cyan);
+}
+
+.services__card--motion {
+  grid-area: motion;
+  background-color: var(--color-dark-purple);
 }
