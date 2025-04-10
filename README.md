@@ -16,9 +16,11 @@ Live Link: [vb-singlepageportfolio.netlify.app](https://vb-singlepageportfolio.n
 - [👤 Author](#-author)
 
 ## 🚀 Getting Started
+
 This project is built using HTML and CSS and hosted on Netlify.
 
 ## 🛠️ Tech Stack
+
 - HTML
 - CSS
 
@@ -50,10 +52,18 @@ Double click the `index.html` file to open the code in the browser of your choic
 - Next, I worked on the navigation components(main and footer navigations) and enusred they are responsive and accessible across all major devices
 - After, I started working on the main sections of the website (hero, services, about, work, and bookings)
 
+**Git Commands Used**
 
+- **git status**: to check or show the current state of my working
+- **git log**: shows the list of all commits
+- **git checkout**: use to switch to another branch
+- **git checkout -b `<branch_name>`**: uset to create a new branch and switch into.
+- **git add**: use to stage changes made and prepare for the next commit
+- **git commit**: saves a saved staged changes as a snapshot in a projects history with a snap.
+- **git pull**: it gets the latest changes from a branch on orgin and merge them into a local branch
+- **git push**: use to send committed changes to a remote repository.
 
 ## 📸 Screenshots
-
 
 ## 🚀 Deployment
 
