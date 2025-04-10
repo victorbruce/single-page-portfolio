@@ -239,10 +239,19 @@ body {
 .services__card {
   border-radius: var(--corner-radius);
   padding: var(--spacing-md);
+  position: relative;
 }
 
 .services__card h3 {
   color: white;
+  /* position: absolute;
+  left: 24px;
+  bottom: 24px; */
+}
+
+.services__card > div {
+  display: flex;
+  justify-content: end;
 }
 
 .services__cards {
@@ -258,29 +267,60 @@ body {
 
 @media (min-width: 768px) {
   .services__cards {
-    grid-template-areas: 
-    "graphic graphic ui apps"
-    "graphic graphic illustrations illustrations"
-    "photography photography motion motion";
+    grid-template-areas:
+      "graphic graphic ui apps"
+      "graphic graphic illustrations illustrations"
+      "photography photography motion motion";
   }
 }
 
 @media (min-width: 1024px) {
   .services__cards {
-    grid-template-areas: 
-    "graphic ui apps photography"
-    "graphic illustrations illustrations motion";
+    grid-template-areas:
+      "graphic ui apps photography photography"
+      "graphic illustrations illustrations motion motion";
   }
 }
 
 .services__card--graphic {
   grid-area: graphic;
   background-color: var(--color-galatic-blue);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.services__card--graphic div {
+  margin-bottom: 94px;
+}
+
+.services__card--graphic img {
+  width: 128px;
+  height: 192px;
+  object-fit: contain;
 }
 
 .services__card--ui {
   grid-area: ui;
   background-color: var(--color-summer-yellow);
+}
+
+.services__card--ui div,
+.services__card--apps div,
+.services__card--photography div {
+  margin-bottom: 40px;
+}
+
+.services__card--illustrations div,
+.services__card--motion div {
+  margin-bottom: 48px;
+}
+
+.services__card--ui img,
+.services__card--apps img {
+  width: 64px;
+  height: 64px;
 }
 
 .services__card--apps {
