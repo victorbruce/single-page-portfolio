@@ -131,7 +131,6 @@ body {
   margin: auto;
 }
 
-
 .consultation__link {
   background-color: var(--color-light-red);
   color: var(--color-light-cream);
@@ -230,6 +229,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .hero {
+    padding: 4rem 0;
+  }
   .hero__container {
     gap: 1.6875rem;
     max-width: 690px;
@@ -242,6 +244,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .hero {
+    padding: 4.125rem 0;
+  }
   .hero__container {
     gap: var(--spacing-md);
     max-width: 752px;
@@ -444,6 +449,93 @@ body {
   }
 }
 
+/* Work */
+.work {
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  .work {
+    margin-bottom: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .work {
+    margin-bottom: 88px;
+  }
+}
+
+.work h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.work__slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  margin-bottom: var(--spacing-lg);
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.work__slider::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .work__slider {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.work__image-container {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 270px;
+}
+
+@media (min-width: 768px) {
+  .work__image-container {
+    width: 540px;
+  }
+}
+
+.work__image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.work__btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.work__btns button {
+  background-color: var(--color-black);
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  cursor: pointer;
+  border: none;
+  outline: 0;
+
+  transition: all 0.3s ease-out;
+}
+
+.work__btns button:hover {
+  background-color: var(--color-galatic-blue);
+}
+
 /* Booking */
 .booking {
   background-color: var(--color-black);
@@ -454,12 +546,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.625rem;
+  margin-bottom: 1.25rem;
 }
 
 @media (min-width: 768px) {
   .booking {
     max-width: 690px;
     margin: auto;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -509,4 +603,3 @@ body {
     margin: 0;
   }
 }
-
