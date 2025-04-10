@@ -64,6 +64,10 @@ Double click the `index.html` file to open the code in the browser of your choic
 - **git push**: use to send committed changes to a remote repository.
 
 ## 📸 Screenshots
+![mobile view](./screenshots/mobile.png)
+![tablet view](./screenshots/tablet.png)
+![desktop view](./screenshots/desktop.png)
+
 
 ## 🚀 Deployment
 
