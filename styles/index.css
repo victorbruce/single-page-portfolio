@@ -112,6 +112,7 @@ body {
   line-height: 1.5;
 }
 
+/* Reusable Styles */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -128,6 +129,27 @@ body {
 .container {
   padding: var(--spacing-sm);
   margin: auto;
+}
+
+
+.consultation__link {
+  background-color: var(--color-light-red);
+  color: var(--color-light-cream);
+  padding: 0.5rem 1.75rem;
+  border-radius: 28px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.consultation__link:hover {
+  transition: all 0.3s ease-out;
+  background-color: var(--color-summer-yellow);
+}
+
+@media (min-width: 768px) {
+  .consultation__link {
+    padding: 0.875rem 2.8125rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -422,22 +444,69 @@ body {
   }
 }
 
-.about__link {
-  background-color: var(--color-light-red);
+/* Booking */
+.booking {
+  background-color: var(--color-black);
   color: var(--color-light-cream);
-  padding: 0.5rem 1.75rem;
-  border-radius: 28px;
-  font-size: 0.875rem;
-  font-weight: bold;
-}
+  padding: 3rem var(--spacing-md);
+  border-radius: 10px;
 
-.about__link:hover {
-  transition: all 0.3s ease-out;
-  background-color: var(--color-summer-yellow);
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
 }
 
 @media (min-width: 768px) {
-  .about__link {
-    padding: 0.875rem 2.8125rem;
+  .booking {
+    max-width: 690px;
+    margin: auto;
   }
 }
+
+@media (min-width: 1024px) {
+  .booking {
+    max-width: var(--container-size);
+
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5rem 4rem;
+  }
+}
+
+.booking__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+
+  text-align: center;
+}
+
+.booking__content h2,
+.booking__content p {
+  color: var(--color-light-cream);
+}
+
+.booking__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .booking__content {
+    max-width: 540px;
+    margin: auto;
+  }
+
+  .booking__content p {
+    font-size: var(--font-body-md);
+  }
+}
+
+@media (min-width: 1034px) {
+  .booking__content {
+    text-align: left;
+    margin: 0;
+  }
+}
+
