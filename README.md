@@ -71,7 +71,7 @@ Double click the `index.html` file to open the code in the browser of your choic
 
 ## 🚀 Deployment
 
-Netlify
+check deployment documentation [here](./deployment.md)
 
 ## 👤 Author
 
