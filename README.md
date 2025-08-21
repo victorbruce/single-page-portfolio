@@ -2,8 +2,6 @@
 
 Translating a Single-Page Desgin Portfolio UI in figma into code.
 
-Live Link: [vb-singlepageportfolio.netlify.app](https://vb-singlepageportfolio.netlify.app/)
-
 ## 📌 Table of Contents
 
 - [🚀 Getting Started](#-getting-started)
@@ -71,7 +69,7 @@ Double click the `index.html` file to open the code in the browser of your choic
 
 ## 🚀 Deployment
 
-check deployment documentation [here](./deployment.md)
+Find the deployment documentation [here](./deployment.md)
 
 ## 👤 Author
 
